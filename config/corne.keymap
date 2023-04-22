@@ -123,13 +123,6 @@
             tapping-term-ms = <TAP_SPEED>; 
             bindings = <&kp MINUS>, <&kp UNDERSCORE>;
             }; 
-        td7: tap_dance_7 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_7"; 
-            #binding-cells = <0>; 
-            tapping-term-ms = <TAP_SPEED>; 
-            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
-            }; 
         td8: tap_dance_8 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_8"; 
@@ -157,8 +150,7 @@
             #binding-cells = <0>; 
             tapping-term-ms = <TAP_SPEED>; 
             bindings = <&kp GRAVE>, <&kp TILDE>;
-            };            
-
+            }; 
         td12: tap_dance_12 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_12"; 
