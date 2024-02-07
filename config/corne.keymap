@@ -49,12 +49,12 @@
 
         raise_layer {
 // RIGHT -----------------------------------------------------------------------------------------
-// | TAB   |   !   |   @   |   #   |   $   |   %   |       |   ^   |   &   |   *   |   (   |   )   | BKSP  |
+// | TAB   |   !   |   @   |   #   |   $   |   %   |       |   ^   |   &   |   *   |   (   |   )   | DEL   |
 // | CTRL  |       |       |       |       |       |       |   -   |   =   |   [   |   ]   |   \   |  `    |
 // | SHFT  |       |       |       |       |       |       |   _   |   +   |   {   |   }   |  '|'  |  ~    |
 //                         |  GUI  |       |  SPC  |       |       | _____ |       |
             bindings = <
-   &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
    &kp LCTRL &trans   &trans &trans   &trans   &trans        &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans        &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp SPACE     &trans    &trans    &trans
@@ -63,14 +63,14 @@
 
         bt_media_layer {
 // BOTH -----------------------------------------------------------------------------------------
-// | TAB   |  F1   |  F2   |  F3   |  F4   |  F5   |       |  F6   |  F7   |  F8   |  F9   |  F10  | BKSP |
+// |       |  F1   |  F2   |  F3   |  F4   |  F5   |       |  F6   |  F7   |  F8   |  F9   |  F10  |      |
 // | BTCLR |  BT1  |  BT2  |  BT3  |  BT4  |  BT5  |       |       |       |       |  F11  |  F12  |      |
-// | SHFT  |       |       |       |       |       |       |       |       |       |       |       |      |
+// |       |       |       |       |       |       |       |       |       |       |       |       |      |
 //                         |       | _____ |       |       |       | _____ |       |
             bindings = <
-   &kp TAB    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &kp F6  &kp F7 &kp F8 &kp F9  &kp F10 &kp BSPC
+   &trans     &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &kp F6  &kp F7 &kp F8 &kp F9  &kp F10 &trans
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans  &trans &trans &kp F11 &kp F12 &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans           &trans  &trans &trans &trans  &trans  &trans
+   &trans     &trans       &trans       &trans       &trans       &trans           &trans  &trans &trans &trans  &trans  &trans
                                         &trans       &trans       &trans           &trans  &trans &trans
             >;
         };
