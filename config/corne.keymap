@@ -29,10 +29,10 @@
             //                         |  ALT  |  LWR  |  SPC  |       |  ENT  |  RSE  |  ALT  |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y    &kp U  &kp I         &kp O    &kp P     &kp BSPC
-&kp LEFT_COMMAND  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H    &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N    &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
-                                &kp LEFT_ALT  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp CAPSLOCK
+&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y    &kp U  &kp I                                 &kp O    &kp P     &kp BSPC
+&kp LEFT_COMMAND  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H    &kp J  &kp K                                 &kp L    &kp SEMI  &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N    &kp M  &kp COMMA                             &kp DOT  &kp FSLH  &kp ESC
+                                &kp LEFT_ALT  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
             >;
         };
 
@@ -44,10 +44,10 @@
             //                         |       |[PRESS]|       |       |  ENT  |       |  ALT  |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7         &kp N8            &kp N9     &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP            &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP       &kp END    &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans         &kp LEFT_CONTROL
+&trans        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7         &kp N8            &kp N9     &kp N0  &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP            &kp RIGHT  &trans  &trans
+&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP       &kp END    &trans  &trans
+                              &trans  &trans  &trans    &trans    &trans         &kp LEFT_CONTROL
             >;
         };
 
@@ -59,10 +59,10 @@
             //                         |  GUI  |       |  SPC  |       |       |[PRESS]|       |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
-&trans  &trans    &trans  &trans     &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans     &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                          &kp GLOBE  &trans    &trans       &trans     &trans     &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
+&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                          &trans    &trans    &trans       &trans     &trans     &trans
             >;
         };
 
