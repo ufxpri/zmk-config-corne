@@ -7,10 +7,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 27afcb11efff6345d0ceb875e85c2de0673123f6
       import: app/west.yml
     - name: nice-view-gem #new entry
       remote: m165437 #new entry
-      revision: main #new entry
+      revision: 0a50fe209d929c916c5664c6affd0f4977c6b012 #new entry
   self:
     path: config
